@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  /* Colors */
+  --color-primary: #2563EB;
+  --color-primary-hover: #1D4ED8;
+
+  --color-background: #FAFAFA;
+  --color-surface: #FFFFFF;
+
+  --color-text: #111827;
+  --color-text-secondary: #6B7280;
+
+  --color-border: #E5E7EB;
+
+
+  /* Typography */
+  --heading-xl: 48px;
+  --heading-lg: 36px;
+  --heading-md: 28px;
+  --text-lg: 18px;
+  --text-md: 16px;
+  --text-sm: 14px;
+
+
+  /* Spacing */
+  --container-width: 1200px;
+
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+
+h1 {
+  font-size: var(--heading-xl);
+}
+
+
+h2 {
+  font-size: var(--heading-lg);
+}
+
+
+h3 {
+  font-size: var(--heading-md);
+}
+
+
+p {
+  color: var(--color-text-secondary);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 24px;
+
+  border-radius: var(--radius-sm);
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+
+  cursor: pointer;
+}
+
+
+.btn {
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:10px;
+
+  padding:13px 26px;
+
+  border-radius:14px;
+
+  font-size:15px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:
+  transform .3s ease,
+  box-shadow .3s ease,
+  background .3s ease;
+
+}
+
+
+
+/* PROJECT BUTTON */
+
+
+.btn-project {
+
+  background:
+  linear-gradient(
+    135deg,
+    #111827,
+    #374151
+  );
+
+  color:white;
+
+  box-shadow:
+  0 10px 25px rgba(17,24,39,.15);
+
+}
+
+
+
+.btn-project:hover {
+
+  transform:
+  translateY(-4px);
+
+  box-shadow:
+  0 15px 35px rgba(17,24,39,.25);
+
+}
+
+
+
+.btn-project .arrow-icon {
+
+  transition:
+  transform .3s ease;
+
+}
+
+
+
+.btn-project:hover .arrow-icon {
+
+  transform:
+  translateX(6px);
+
+}
+
+
+
+
+
+/* GITHUB BUTTON */
+
+
+.btn-github {
+
+  background:#000;
+
+  color:white;
+
+  border:1px solid #000;
+
+}
+
+
+
+.btn-github:hover {
+
+  transform:
+  translateY(-4px);
+
+  background:#171717;
+
+  box-shadow:
+  0 12px 30px rgba(0,0,0,.2);
+
+}
+
+
+
+.github-icon {
+
+  transition:
+  transform .3s ease;
+
+}
+
+
+
+.btn-github:hover .github-icon {
+
+  transform:
+  scale(1.15)
+  rotate(-5deg);
+
+}
+
+/* Prism Code Highlight */
+
+.token.keyword {
+  color:#c084fc;
+}
+
+
+.token.string {
+  color:#86efac;
+}
+
+
+.token.property {
+  color:#93c5fd;
+}
+
+
+.token.function {
+  color:#facc15;
+}
+
+
+.token.punctuation {
+  color:#d1d5db;
+}
+
+
+.token.number {
+  color:#fb7185;
+}
+
+html {
+
+  scroll-behavior: auto;
+
+}
+
+
+body {
+
+  overflow-x:hidden;
+
+}

@@ -1,0 +1,364 @@
+.navbar {
+
+  position:sticky;
+
+  top:0;
+
+  z-index:100;
+
+
+  width:100%;
+
+
+  background:
+
+  rgba(250,250,250,.75);
+
+
+  backdrop-filter:
+
+  blur(12px);
+
+
+  border-bottom:
+
+  1px solid #e5e7eb;
+
+
+}
+
+
+
+.navbar-container {
+
+
+  height:80px;
+
+
+  display:flex;
+
+
+  align-items:center;
+
+
+  justify-content:space-between;
+
+
+}
+
+
+
+/* LOGO */
+
+
+.logo {
+
+
+  display:flex;
+
+
+  align-items:center;
+
+
+  gap:12px;
+
+
+  font-weight:700;
+
+
+  color:#111827;
+
+
+}
+
+
+
+.logo-mark {
+
+
+  width:42px;
+
+  height:42px;
+
+
+  display:flex;
+
+
+  align-items:center;
+
+
+  justify-content:center;
+
+
+  border-radius:12px;
+
+
+  background:#111827;
+
+
+  color:white;
+
+
+  font-weight:800;
+
+
+  transition:.3s ease;
+
+
+}
+
+
+
+.logo:hover .logo-mark {
+
+
+  transform:
+
+  rotate(-5deg)
+
+  translateY(-3px);
+
+
+  box-shadow:
+
+  0 10px 25px rgba(0,0,0,.18);
+
+
+}
+
+
+
+.logo-name {
+
+
+  font-size:16px;
+
+
+}
+
+
+
+
+
+/* MENU */
+
+
+.nav-menu {
+
+
+  display:flex;
+
+
+  align-items:center;
+
+
+  gap:32px;
+
+
+}
+
+
+
+.nav-link {
+
+
+  position:relative;
+
+
+  color:#6b7280;
+
+
+  font-size:15px;
+
+
+  font-weight:500;
+
+
+  transition:.3s ease;
+
+
+}
+
+
+
+.nav-link:hover {
+
+
+  color:#111827;
+
+
+}
+
+
+
+
+
+/* ACTIVE */
+
+
+.nav-link.active {
+
+
+  color:#111827;
+
+
+  font-weight:600;
+
+
+}
+
+
+
+.nav-link::after {
+
+
+  content:"";
+
+
+  position:absolute;
+
+
+  bottom:-8px;
+
+
+  left:0;
+
+
+  width:0;
+
+
+  height:2px;
+
+
+  background:#111827;
+
+
+  transition:.3s ease;
+
+
+}
+
+
+
+.nav-link:hover::after,
+
+.nav-link.active::after {
+
+
+  width:100%;
+
+
+}
+
+
+
+
+
+/* MOBILE BUTTON */
+
+
+.menu-button {
+
+
+  display:none;
+
+
+  background:none;
+
+
+  border:none;
+
+
+  cursor:pointer;
+
+
+  color:#111827;
+
+
+}
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:768px){
+
+
+.nav-menu {
+
+
+  display:none;
+
+
+}
+
+
+
+.menu-button {
+
+
+  display:block;
+
+
+}
+
+
+
+
+.nav-menu.open {
+
+
+  display:flex;
+
+
+  position:absolute;
+
+
+  top:80px;
+
+
+  left:0;
+
+
+  width:100%;
+
+
+  flex-direction:column;
+
+
+  gap:20px;
+
+
+  padding:30px;
+
+
+  background:white;
+
+
+  border-bottom:
+
+  1px solid #e5e7eb;
+
+
+  box-shadow:
+
+  0 20px 40px rgba(0,0,0,.08);
+
+
+}
+
+
+
+.nav-link::after {
+
+
+  bottom:-5px;
+
+
+}
+
+
+}

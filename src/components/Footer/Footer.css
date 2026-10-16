@@ -1,0 +1,666 @@
+.footer {
+
+
+margin-top:120px;
+
+
+background:#111827;
+
+
+color:white;
+
+
+padding:80px 0 30px;
+
+
+}
+
+
+
+
+
+.footer-grid {
+
+
+display:grid;
+
+
+grid-template-columns:
+
+2fr 1fr 1fr 1fr;
+
+
+gap:50px;
+
+
+}
+
+
+
+
+.footer-logo {
+
+
+width:55px;
+
+height:55px;
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+background:white;
+
+
+color:#111827;
+
+
+border-radius:16px;
+
+
+font-weight:800;
+
+
+font-size:22px;
+
+
+margin-bottom:25px;
+
+
+transition:.3s;
+
+
+}
+
+
+
+
+.footer-logo:hover {
+
+
+transform:
+
+translateY(-5px)
+
+rotate(-5deg);
+
+
+}
+
+
+
+
+
+.footer-brand h3 {
+
+
+font-size:22px;
+
+
+margin-bottom:12px;
+
+
+}
+
+
+
+
+
+.footer-brand p {
+
+
+color:#9ca3af;
+
+
+line-height:1.7;
+
+
+max-width:320px;
+
+
+}
+
+
+
+
+.social-list {
+
+
+display:flex;
+
+
+gap:12px;
+
+
+margin-top:30px;
+
+
+}
+
+
+
+.social-list a {
+
+
+width:42px;
+
+height:42px;
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+border-radius:50%;
+
+
+background:#1f2937;
+
+
+font-size:19px;
+
+
+transition:.35s ease;
+
+
+}
+
+.social-list .github {
+
+color:#ffffff;
+
+}
+
+
+.social-list .github:hover {
+
+background:#000;
+
+color:white;
+
+transform:
+translateY(-5px);
+
+}
+
+.social-list .linkedin {
+
+color:#0A66C2;
+
+}
+
+
+.social-list .linkedin:hover {
+
+background:#0A66C2;
+
+color:white;
+
+transform:
+translateY(-5px);
+
+}
+
+.social-list .instagram {
+
+
+background:
+
+linear-gradient(
+45deg,
+#feda75,
+#d62976,
+#962fbf,
+#4f5bd5
+);
+
+
+color:white;
+
+
+}
+
+.social-list .instagram:hover {
+
+
+transform:
+
+translateY(-5px)
+scale(1.08);
+
+
+}
+
+.social-list .whatsapp {
+
+color:#25D366;
+
+}
+
+
+.social-list .whatsapp:hover {
+
+background:#25D366;
+
+color:white;
+
+transform:
+translateY(-5px);
+
+}
+
+.social-list a:hover {
+
+
+background:white;
+
+
+color:#111827;
+
+
+transform:
+
+translateY(-5px);
+
+
+}
+
+
+
+
+
+
+.footer-column {
+
+
+display:flex;
+
+
+flex-direction:column;
+
+
+gap:14px;
+
+
+}
+
+
+
+
+
+.footer-column h4 {
+
+
+font-size:18px;
+
+
+margin-bottom:15px;
+
+
+}
+
+
+
+
+.footer-column a {
+
+  position:relative;
+
+  width:max-content;
+
+  color:#9ca3af;
+
+  font-size:15px;
+
+  transition:.3s ease;
+
+}
+
+
+
+
+
+.footer-column a:hover {
+
+  color:white;
+
+  transform:
+
+  translateX(6px);
+
+}
+
+.footer-column a::after {
+
+
+  content:"";
+
+
+  position:absolute;
+
+
+  left:0;
+
+
+  bottom:-5px;
+
+
+  width:0;
+
+
+  height:2px;
+
+
+  background:white;
+
+
+  transition:.35s ease;
+
+
+}
+
+
+
+
+.footer-column a:hover::after {
+
+
+  width:100%;
+
+
+}
+
+
+
+
+
+
+.footer-bottom {
+
+
+margin-top:70px;
+
+
+padding-top:30px;
+
+
+border-top:
+
+1px solid rgba(255,255,255,.12);
+
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:space-between;
+
+
+}
+
+
+
+.copyright p {
+
+
+color:#9ca3af;
+
+
+font-size:14px;
+
+
+}
+
+
+
+
+.footer-legal {
+
+
+display:flex;
+
+
+align-items:center;
+
+
+gap:18px;
+
+
+}
+
+
+
+.footer-legal > span {
+
+
+font-size:13px;
+
+
+text-transform:uppercase;
+
+
+letter-spacing:1px;
+
+
+color:#6b7280;
+
+
+font-weight:600;
+
+
+}
+
+
+
+.legal-links {
+
+
+display:flex;
+
+
+align-items:center;
+
+
+gap:12px;
+
+
+}
+
+
+
+.legal-links span {
+
+
+color:#6b7280;
+
+
+}
+
+
+
+
+.legal-links a {
+
+
+position:relative;
+
+
+color:#9ca3af;
+
+
+font-size:14px;
+
+
+transition:.3s ease;
+
+
+}
+
+
+
+.legal-links a::after {
+
+
+content:"";
+
+
+position:absolute;
+
+
+left:0;
+
+
+bottom:-6px;
+
+
+width:0;
+
+
+height:2px;
+
+
+background:white;
+
+
+transition:.3s ease;
+
+
+}
+
+
+
+.legal-links a:hover {
+
+
+color:white;
+
+
+transform:
+
+translateY(-3px);
+
+
+}
+
+
+
+.legal-links a:hover::after {
+
+
+width:100%;
+
+
+}
+
+
+
+
+
+
+@media(max-width:900px){
+
+
+.footer-grid {
+
+
+grid-template-columns:1fr 1fr;
+
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.footer-grid {
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+.footer-bottom {
+
+
+flex-direction:column;
+
+
+gap:10px;
+
+
+text-align:center;
+
+
+}
+
+
+}
+
+.footer-policy a {
+
+position:relative;
+
+transition:.3s ease;
+
+}
+
+
+
+.footer-policy a::after {
+
+
+content:"";
+
+
+position:absolute;
+
+
+bottom:-5px;
+
+
+left:0;
+
+
+width:0;
+
+
+height:2px;
+
+
+background:white;
+
+
+transition:.3s ease;
+
+
+}
+
+
+
+.footer-policy a:hover::after {
+
+
+width:100%;
+
+
+}
